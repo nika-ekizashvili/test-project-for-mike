@@ -1,0 +1,38 @@
+{
+  "name": "@systemctl/ui",
+  "version": "0.1.0",
+  "description": "systemctl UI component library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "ui",
+    "components",
+    "react",
+    "button",
+    "systemctl"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/systemctl-ui"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "typescript": "^5"
+  }
+}
