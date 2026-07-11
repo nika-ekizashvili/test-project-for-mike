@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kudos-backend
+  namespace: staging
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kudos-backend
+  template:
+    metadata:
+      labels:
+        app: kudos-backend
+    spec:
+      containers:
+      - name: kudos-backend
+        image: kudos-backend:latest
+        ports:
+        - containerPort: 8080
+        env:
+        - name: DB_URL
+          valueFrom:
+            secretKeyRef:
+              name: postgres-secret
+              key: db-url
