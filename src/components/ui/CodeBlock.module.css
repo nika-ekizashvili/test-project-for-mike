@@ -1,0 +1,172 @@
+.codeblock {
+  position: relative;
+  background-color: var(--color-dark-surface-primary);
+  border: var(--border-width-1) solid var(--color-dark-border);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  font-family: var(--font-family-mono);
+  line-height: var(--line-height-normal);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-3) var(--spacing-4);
+  background-color: var(--color-dark-surface-secondary);
+  border-bottom: var(--border-width-1) solid var(--color-dark-border);
+}
+
+.language {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.copyButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--color-dark-border);
+  border-radius: var(--border-radius-md);
+  background-color: var(--color-dark-surface-primary);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  font-size: var(--font-size-xs);
+}
+
+.copyButton:hover {
+  background-color: var(--color-accent-blue);
+  border-color: var(--color-accent-blue);
+  color: var(--color-neutral-0);
+}
+
+.copyButton:active {
+  transform: scale(0.95);
+}
+
+.copyButton.copied {
+  background-color: var(--color-success-600);
+  border-color: var(--color-success-600);
+  color: var(--color-neutral-0);
+}
+
+.content {
+  padding: var(--spacing-4);
+  overflow-x: auto;
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+}
+
+.code {
+  margin: 0;
+  white-space: pre;
+  word-break: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Syntax highlighting support */
+.keyword {
+  color: var(--color-primary-400);
+}
+
+.string {
+  color: var(--color-success-400);
+}
+
+.comment {
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.function {
+  color: var(--color-primary-300);
+}
+
+.number {
+  color: var(--color-warning-400);
+}
+
+.operator {
+  color: var(--color-text-primary);
+}
+
+.tag {
+  color: var(--color-primary-400);
+}
+
+.attribute {
+  color: var(--color-warning-400);
+}
+
+/* Scrollbar styling */
+.content::-webkit-scrollbar {
+  height: 8px;
+}
+
+.content::-webkit-scrollbar-track {
+  background-color: var(--color-dark-surface-primary);
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: var(--color-dark-border);
+  border-radius: 4px;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-neutral-600);
+}
+
+/* Line numbers */
+.lineNumber {
+  display: inline-block;
+  width: 2.5em;
+  padding-right: var(--spacing-3);
+  color: var(--color-text-muted);
+  text-align: right;
+  user-select: none;
+}
+
+/* Highlight line */
+.highlightLine {
+  background-color: rgba(30, 144, 255, 0.1);
+  border-left: 2px solid var(--color-accent-blue);
+  padding-left: calc(var(--spacing-4) - 2px);
+}
+
+/* Variant: dark */
+.variant-dark {
+  background-color: var(--color-dark-bg);
+  color: var(--color-text-primary);
+}
+
+.variant-dark .header {
+  background-color: var(--color-dark-surface-primary);
+}
+
+.variant-dark .content {
+  background-color: var(--color-dark-bg);
+}
+
+/* Variant: compact */
+.variant-compact {
+  border: none;
+  border-radius: var(--border-radius-md);
+}
+
+.variant-compact .header {
+  padding: var(--spacing-2) var(--spacing-3);
+  font-size: var(--font-size-xs);
+}
+
+.variant-compact .content {
+  padding: var(--spacing-2) var(--spacing-3);
+  max-height: 300px;
+}
