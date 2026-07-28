@@ -1,6 +1,0 @@
-# TP-4: registration flow
-
-registration layoutrouting validation mocks
-
----
-_Drafted by Sapper — placeholder change (no ANTHROPIC_API_KEY set)._
