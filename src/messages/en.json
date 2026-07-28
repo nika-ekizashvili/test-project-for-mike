@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "title": "Double Your Listings, Half the Effort",
+    "subtitle": "The intelligent extension for Georgian real estate agents managing SS.ge and MyHome.ge listings simultaneously",
+    "description": "Streamline your workflow across multiple property platforms with our smart extension designed specifically for Georgian real estate professionals.",
+    "feature1": "Auto-sync listings across platforms",
+    "feature2": "Unified agent dashboard",
+    "feature3": "Real-time market insights",
+    "getStarted": "Install on Chrome",
+    "learnMore": "View Documentation"
+  },
+  "features": {
+    "title": "Core Capabilities",
+    "description": "Powerful features designed for Georgian real estate professionals",
+    "oneClickExtraction": {
+      "title": "One-Click Data Extraction & Injection",
+      "description": "Seamlessly extract property data from SS.ge and inject it directly into MyHome.ge with a single click. No manual copying required."
+    },
+    "dualPlatformFilling": {
+      "title": "Concurrent Dual-Platform Form Filling",
+      "description": "Fill forms on both SS.ge and MyHome.ge simultaneously. Save time by updating both platforms at once."
+    },
+    "customizableTemplates": {
+      "title": "Customizable Listing Templates",
+      "description": "Create and customize templates for different deal types: sales, rentals, daily rentals, and mortgage listings. Reuse templates to speed up listings."
+    },
+    "autoPriceAdjustment": {
+      "title": "Automatic Price Adjustments",
+      "description": "Adjust prices across both platforms with calculated rounding and area adjustments. Keep pricing consistent and competitive."
+    },
+    "draftAlertProtection": {
+      "title": "Draft-Alert Protection",
+      "description": "Prevent accidental data loss with draft-alert notifications. Your work is automatically saved and protected across sessions."
+    }
+  }
+}
