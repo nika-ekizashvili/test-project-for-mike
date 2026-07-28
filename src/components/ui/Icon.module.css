@@ -1,0 +1,143 @@
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+/* Size variants */
+.size-xs {
+  width: var(--icon-size-xs);
+  height: var(--icon-size-xs);
+}
+
+.size-sm {
+  width: var(--icon-size-sm);
+  height: var(--icon-size-sm);
+}
+
+.size-md {
+  width: var(--icon-size-md);
+  height: var(--icon-size-md);
+}
+
+.size-lg {
+  width: var(--icon-size-lg);
+  height: var(--icon-size-lg);
+}
+
+.size-xl {
+  width: var(--icon-size-xl);
+  height: var(--icon-size-xl);
+}
+
+.size-2xl {
+  width: var(--icon-size-2xl);
+  height: var(--icon-size-2xl);
+}
+
+.size-3xl {
+  width: var(--icon-size-3xl);
+  height: var(--icon-size-3xl);
+}
+
+/* Color variants */
+.color-primary {
+  color: var(--color-primary-600);
+}
+
+.color-secondary {
+  color: var(--color-text-secondary);
+}
+
+.color-success {
+  color: var(--color-success-500);
+}
+
+.color-warning {
+  color: var(--color-warning-500);
+}
+
+.color-error {
+  color: var(--color-error-500);
+}
+
+.color-muted {
+  color: var(--color-text-muted);
+}
+
+.color-current {
+  color: currentColor;
+}
+
+/* Stroke variations */
+.stroke-1 {
+  stroke-width: 1;
+}
+
+.stroke-1-5 {
+  stroke-width: 1.5;
+}
+
+.stroke-2 {
+  stroke-width: 2;
+}
+
+.stroke-2-5 {
+  stroke-width: 2.5;
+}
+
+/* Animation utilities */
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Interaction states */
+.interactive {
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.interactive:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.interactive:active {
+  transform: scale(0.95);
+}
+
+/* Focus state */
+.interactive:focus {
+  outline: var(--focus-outline-width) solid var(--focus-outline-color);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-sm);
+}
+
+/* SVG specific */
+.icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
