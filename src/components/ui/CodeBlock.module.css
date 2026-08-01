@@ -1,0 +1,15 @@
+.codeBlock {
+  background-color: var(--color-dark-surface-primary);
+  border: var(--border-width-1) solid var(--color-dark-border);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-4);
+  overflow-x: auto;
+  margin: var(--spacing-4) 0;
+}
+
+.code {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+}

@@ -1,0 +1,109 @@
+.simulator {
+  width: 100%;
+  padding: 60px 40px;
+  background: #0a0e27;
+  color: #e8e8e8;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 12px;
+  color: #e8e8e8;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #9ca3af;
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.statusArea {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.statusMessage {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.statusIcon {
+  font-size: 20px;
+  color: #1e90ff;
+}
+
+.statusText {
+  color: #e8e8e8;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+@media (max-width: 1024px) {
+  .simulator {
+    padding: 48px 30px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .simulator {
+    padding: 40px 20px;
+  }
+
+  .header {
+    margin-bottom: 32px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .statusMessage {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
